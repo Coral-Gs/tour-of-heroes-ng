@@ -4,10 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # The finished project 
 
-Gets a list of heroes
-Displays the heroes in a list
-Edits a selected hero's details
-Navigates between different views of heroic data
+* Gets a list of heroes
+* Displays the heroes in a list
+* Edits a selected hero's details
+* Navigates between different views of heroic data
 
 ## Development server
 
