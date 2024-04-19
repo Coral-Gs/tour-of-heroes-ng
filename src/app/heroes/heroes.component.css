@@ -1,0 +1,7 @@
+input {
+    height: 20px;
+}
+
+.selected {
+    background-color: beige;
+}
