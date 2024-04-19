@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { Hero } from '../interfaces/hero.interface';
+import { Hero } from '../../interfaces/hero.interface';
 import { FormsModule } from '@angular/forms';
 import { NgIf, UpperCasePipe } from '@angular/common';
-import { PrimengModule } from '../primeng/primeng.module';
+import { PrimengModule } from '../../primeng/primeng.module';
 
 @Component({
   standalone: true,

@@ -1,7 +1,7 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
   <li
-  *ngFor="let hero of heroList"
+  *ngFor="let hero of heroes"
   >
     <button 
     pButton class="mb-2"
@@ -15,4 +15,6 @@
 </ul>
 
 <hero-detail [hero]="selectedHero"></hero-detail>
+
+
 

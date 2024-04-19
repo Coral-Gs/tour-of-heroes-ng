@@ -3,16 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
+import { HeroesComponent } from './heroes/hero-list/heroes.component';
 import { PrimengModule } from './primeng/primeng.module';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component';
+import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MessagesComponent,
+    HeroesComponent,
+    DashboardComponent,
     
   ],
   imports: [
@@ -21,7 +26,6 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
     BrowserModule,
     CommonModule,
     FormsModule,
-    HeroesComponent,
     PrimengModule,
     HeroDetailComponent,
   ],
