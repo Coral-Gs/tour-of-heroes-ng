@@ -19,4 +19,10 @@ export class HeroService {
     const heroes = of(Heroes); //of() devuelve un observable<Hero[]> que emite un único valor Hero[]
     return heroes;
   }
+
+  getHero(id: number): Observable<Hero>{
+    const hero = Heroes.find(h => h.id === id)!;
+    console.log('Hello from hero service getHero!')
+    return of(hero);
+  }
 }

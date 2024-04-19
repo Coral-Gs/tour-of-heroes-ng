@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './heroes/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +18,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MessagesComponent,
     HeroesComponent,
     DashboardComponent,
+    HeroDetailComponent
     
   ],
   imports: [
@@ -27,7 +28,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     CommonModule,
     FormsModule,
     PrimengModule,
-    HeroDetailComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

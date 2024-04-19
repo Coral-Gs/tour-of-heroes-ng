@@ -1,25 +1,34 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { ActivatedRoute } from '@angular/router';
+
+import { HeroService } from '../../services/hero.service';
 import { Hero } from '../../interfaces/hero.interface';
-import { FormsModule } from '@angular/forms';
-import { NgIf, UpperCasePipe } from '@angular/common';
-import { PrimengModule } from '../../primeng/primeng.module';
 
 @Component({
-  standalone: true,
   selector: 'hero-detail',
   templateUrl: './hero-detail.component.html',
   styleUrl: './hero-detail.component.css',
-  imports: [
-    FormsModule,
-    NgIf,
-    UpperCasePipe,
-    PrimengModule,
-    HeroDetailComponent
-  ],
 })
-export class HeroDetailComponent {
+export class HeroDetailComponent implements OnInit {
 
-  @Input()
   public hero?: Hero;
+
+  constructor (
+    private route: ActivatedRoute,
+    private heroService: HeroService,
+  ){}
+
+  ngOnInit(): void {
+    this.getHero();
+  }
+
+  getHero(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.heroService.getHero(id).subscribe(hero => this.hero = hero);
+  }
+
+
+
 
 }

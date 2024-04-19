@@ -45,5 +45,7 @@ a {
 }
 
 a:hover {
-  background-color: #000;
+  background-color: #fff;
+  color:black;
+  transition: 0.3s all;
 }
