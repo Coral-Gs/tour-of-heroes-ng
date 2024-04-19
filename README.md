@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
 
+# The finished project 
+
+* Gets a list of heroes
+* Displays the heroes in a list
+* Edits a selected hero's details
+* Navigates between different views of heroic data
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
