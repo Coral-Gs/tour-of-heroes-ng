@@ -17,7 +17,6 @@ export class HeroService {
 
   getHeroes(): Observable<Hero[]> {
     const heroes = of(Heroes); //of() devuelve un observable<Hero[]> que emite un único valor Hero[]
-    this.messageService.add('HeroService: fetched heroes');
     return heroes;
   }
 }
