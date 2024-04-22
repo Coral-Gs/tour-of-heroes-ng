@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: #fff;
+    color:black;
+    transition: 0.3s all;
+  }
+  
+  
+  @media (min-width: 600px) {
+    a {
+      width: 18%;
+      box-sizing: content-box;
+    }
+  }
+  
