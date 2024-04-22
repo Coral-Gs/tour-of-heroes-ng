@@ -6,4 +6,5 @@
       <input pInputText type="text" id="hero-name" [(ngModel)]="hero.name" placeholder="name">
     </div>
 </div>
-<button pButton label="Go back" [routerLink]="['/heroes']" class="mt-5"></button>
+<button pButton (click)="save()" class="mr-2">save</button>
+<button pButton label="Go back" (click)="goBack()" class="mt-5"></button>

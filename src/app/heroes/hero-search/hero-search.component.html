@@ -1,0 +1,10 @@
+<div id="search-component">
+  <h3>Hero Search:</h3>
+  <span class="p-input-icon-left">
+    <i class="pi pi-search"></i>
+    <input pInputText type="text" (input)="search(searchBox.value)" #searchBox />
+  </span>
+  <div *ngFor="let hero of heroes$ | async">
+    <a routerLink="/detail/{{ hero.id }}"> {{ hero.name }}</a>
+  </div>
+</div>

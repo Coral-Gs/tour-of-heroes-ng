@@ -1,12 +1,25 @@
 <h2>My Heroes</h2>
 
-<div class="grid">
+<div class="grid m-4">
     <div *ngFor="let hero of heroes" class="col-12 md:col-3 lg:col-2">
         <a routerLink="/detail/{{ hero.id }}">
           {{ hero.name }}
         </a>
+        <button type="button" class="delete" (click)="deleteHero(hero)">Delete</button>
     </div>
 </div>
+<hr class="w-4">
+<div class="m-5">
+  <h3>Add new hero:</h3>
+  <input pInputText id="new-hero" #heroName />
 
-<button pButton label="Go back" [routerLink]="['/']" class="mt-5"></button>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button pButton label="Add hero" class="ml-2" (click)="add(heroName.value); heroName.value=''">
+  </button>
+</div>
+<div class="m-5">
+  <button pButton label="Go back" [routerLink]="['/']" ></button>
+</div>
+<hr class="w-4">
+
 
